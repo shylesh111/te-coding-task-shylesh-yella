@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Zalando Tests" parallel="methods" thread-count="2">
+   <parameter name="suiteName" value="PDS Idle time max test"/>
+   <parameter name="applicationUrl" value="http://zalando-edinc.rhcloud.com/" />
+    <test name="FirefoxTests" preserve-order="true">
+  <classes>	 	 
+  <class name="com.testcases.LoginTestCase"/>
+  </classes>
+</test>
+</suite>
