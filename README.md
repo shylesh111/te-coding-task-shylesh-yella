@@ -20,15 +20,28 @@ This repository contains task1 for Zalando. This document gives overview of the 
 * Covered 6 scenarios for login
 
 #### Scenario 1 ####
-Username : <empty>
-Password : <empty>
+Username : Nousername
+Password : Nopassword
 
-#### Scenario 1 ####
-Username : <empty>
-Password : <empty>
-#### Scenario 1 ####
-Username : <empty>
-Password : <empty>
+#### Scenario 2 ####
+Username : shylesh
+Password : Nopassword
+
+#### Scenario 3 ####
+Username : shylesh
+Password : shylesh
+
+#### Scenario 4 ####
+Username : Nousername
+Password : shylesh
+
+#### Scenario 5 ####
+Username : zalando-lounge
+Password : shylesh
+
+#### Scenario 6 ####
+Username : zalando-lounge
+Password : SuperSecretPassword!
 
 
 
