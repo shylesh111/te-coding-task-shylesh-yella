@@ -20,6 +20,13 @@ This repository contains task1 for Zalando. This document gives overview of the 
 #### Firefox ####
 * Install firefox version 42.0 https://ftp.mozilla.org/pub/firefox/releases/42.0/
 
+##How to Run?##
+Steps to Run:
+* Clone the project into your local. git clone <Repository>
+* Run commands:
+ 1.mvn clean
+ 2.mvn install -DtestNg=testng.xml
+
 ### Scenarios Covered in Test Case ###
 * Covered 6 scenarios for login
 
