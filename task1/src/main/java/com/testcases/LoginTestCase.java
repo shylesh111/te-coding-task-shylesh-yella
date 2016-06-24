@@ -4,11 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -62,7 +59,7 @@ public class LoginTestCase {
 		}	
 
 	}
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	  public void tearDown() throws Exception {
 	    driver.quit();	   
 	  }	
