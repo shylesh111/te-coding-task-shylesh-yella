@@ -4,11 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -23,11 +20,8 @@ public class StatusCodeTestCase {
 	
 	  
 	@BeforeClass(alwaysRun = true)
-	  public void setUp() throws Exception {
-	  String workingDir = System.getProperty("user.dir");
-	  System.setProperty("webdriver.chrome.driver", workingDir+"\\src\\main\\resources\\chromedriver.exe");
-	  driver= new ChromeDriver();
-	   // driver = new FirefoxDriver();
+	  public void setUp() throws Exception {	  
+	    driver = new FirefoxDriver();
 	    baseUrl = "http://zalando-edinc.rhcloud.com/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    driver.get(baseUrl);
