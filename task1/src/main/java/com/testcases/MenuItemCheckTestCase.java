@@ -3,10 +3,8 @@ package com.testcases;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -25,6 +23,7 @@ public class MenuItemCheckTestCase {
 	    driver = new FirefoxDriver();
 	    baseUrl = "http://zalando-edinc.rhcloud.com/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    driver.manage().window().maximize();
 	    driver.get(baseUrl);
 	  }
 	
@@ -46,7 +45,7 @@ public class MenuItemCheckTestCase {
 	    Assert.assertTrue(driver.getPageSource().contains(statusText));
 		page.getReturnPageLink().click();
 	}
-	@AfterClass
+	@AfterClass(alwaysRun =true)
 	  public void tearDown() throws Exception {
 	    driver.quit();	   
 	  }	

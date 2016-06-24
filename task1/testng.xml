@@ -3,7 +3,7 @@
    <parameter name="suiteName" value="PDS Idle time max test"/>   
     <test name="FirefoxTests" preserve-order="true">
   <classes>	 	 
-  <class name="com.testcases.StatusCodeTestCase"/>
+  <class name="com.testcases.MenuItemCheckTestCase"/>
   </classes>
 </test>
 </suite>
