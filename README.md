@@ -9,6 +9,10 @@ This repository contains task1 for Zalando. This document gives overview of the 
 * Eclipse Helios and greater
 
 ### Installation ###
+
+#### Git ####
+* Download git https://git-scm.com/downloads
+
 #### Maven ####
 * Download Maven https://maven.apache.org/download.cgi
 * Install Maven https://maven.apache.org/install.html
