@@ -27,6 +27,11 @@ Steps to Run:
  1.mvn clean
  2.mvn install -DtestNg=testng.xml
 
+ ###OR###
+
+* Run mvn clean, mvn install, mvn eclipse:eclipse commands
+* Import the project into eclipse and run testng.xml file
+
 ### Scenarios Covered in Test Case ###
 * Covered 6 scenarios for login
 
