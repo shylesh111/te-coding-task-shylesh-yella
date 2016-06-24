@@ -20,16 +20,12 @@ import com.util.BasicUtil;
 
 public class LoginTestCase {
 	 private WebDriver driver;
-	 private String baseUrl;
-	 private DesiredCapabilities capabilities;
- 	 protected static ThreadLocal<WebDriver> webDriver = new ThreadLocal<WebDriver>();
+	 private String baseUrl;	
 	  
 	@BeforeClass(alwaysRun = true)
 	  public void setUp() throws Exception {
-	  String workingDir = System.getProperty("user.dir");
-	  System.setProperty("webdriver.chrome.driver", workingDir+"\\src\\main\\resources\\chromedriver.exe");
-	  driver= new ChromeDriver();
-	   // driver = new FirefoxDriver();
+	  
+	    driver = new FirefoxDriver();
 	    baseUrl = "http://zalando-edinc.rhcloud.com/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    driver.get(baseUrl);
@@ -44,8 +40,7 @@ public class LoginTestCase {
 		JSONArray list = (JSONArray)jsonObject.get("login");
 		for (Object fieldObj : list)
 		{
-			JSONObject field = (JSONObject) fieldObj;
-			System.out.println("==================");
+			JSONObject field = (JSONObject) fieldObj;			
 			String userName = (String) field.get("username");
 			String password = (String) field.get("password");
 			String flashMessage = (String) field.get("flashmessage");
